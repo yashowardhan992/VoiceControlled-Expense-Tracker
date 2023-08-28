@@ -76,14 +76,14 @@ const Main = () => {
           {/* List */}
           <List />
           <div className="h-fit flex justify-center">
-            <Button className="p-2 m-2 rounded-full " onClick={handleClick}>
-              <IconButton>
-                {listening ? (
-                  <BsFillMicFill size="sm" />
-                ) : (
-                  <BsFillMicMuteFill size="sm" />
-                )}
-              </IconButton>
+            <Button className="p-2 m-2 rounded-md" onClick={handleClick}>
+              {/*<IconButton>*/}
+              {listening ? (
+                <h5 className="text-green-400">Mic On</h5>
+              ) : (
+                <h5 className="text-red-400">Mic Off</h5>
+              )}
+              {/*</IconButton>*/}
             </Button>
           </div>
         </CardBody>
