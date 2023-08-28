@@ -130,7 +130,7 @@ const Form = () => {
               type="text"
               name="price"
               id="price"
-              className="block w-full rounded-md border-0 py-1.5 pl-7  text-gray-900  placeholder:text-gray-400  focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border-0 py-1.5 pl-7   text-gray-900  placeholder:text-gray-400  focus:ring-indigo-600 sm:text-sm sm:leading-6"
               placeholder="Amount"
               value={formData.amount}
               variant="standard"
