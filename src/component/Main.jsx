@@ -27,7 +27,7 @@ const Main = () => {
     }
   };
   const { balance } = useContext(ExpenseTrackerContext);
-  const formattedBalance = balance.toLocaleString('en-IN');
+ 
   return (
     <div id="main-card-container" className="flex flex-col justify-center">
       <Card id="main-card" className=" flex flex-col justify-center h-fit">
@@ -49,7 +49,7 @@ const Main = () => {
             color="gray"
             className="mt-1 p-1 font-semibold"
           >
-            Total Balance: {`\u20B9 ${formattedBalance}`}
+            Total Balance: {`\u20B9 ${balance}`}
           </Typography>
           <Typography
             variant="small"
