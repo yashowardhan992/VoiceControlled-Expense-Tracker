@@ -8,15 +8,7 @@ const contextReducer = (state, action) => {
       return transactions;
 
     case "ADD_TRANSACTION":
-      // Format the amount with commas as thousands separators
-      const formattedAmount = action.payload.amount.toLocaleString('en-IN');
-
-      const newTransaction = {
-        ...action.payload,
-        amount: formattedAmount
-      };
-
-      transactions = [newTransaction, ...state];
+      transactions = [action.payload, ...state];
       localStorage.setItem("transactions", JSON.stringify(transactions));
       return transactions;
 
